@@ -5,3 +5,6 @@ $(output_name): force_regs.ucli
 
 clean:
 	rm -f $(output_name)
+
+foo.txt:$(output_name)
+	touch foo.txt
