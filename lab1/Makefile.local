@@ -1,0 +1,35 @@
+VERILATOR := verilator
+VFLAGS := --binary --timing --trace-vcd -Wno-fatal -DIVERILOG=1
+
+TESTS := \
+	one_bit_comparator_structural \
+	one_bit_comparator_behavioral \
+	one_bit_comparator_always \
+	four_bit_comparator_always \
+	shift_register_structural \
+	shift_register_behavioral \
+	simple_counter \
+	decoder_4_to_16
+
+EXTRA_shift_register_structural := src/d_flip_flop.sv
+EXTRA_decoder_4_to_16 := src/line_decoder.sv
+
+.PHONY: $(TESTS) sim-all-mac clean-mac
+
+$(TESTS):
+	mkdir -p build/$@
+	$(VERILATOR) $(VFLAGS) \
+		--Mdir build/$@ \
+		--top-module $@_tb \
+		src/$@.sv \
+		sim/$@_tb.sv \
+		$(EXTRA_$@)
+	./build/$@/V$@_tb
+
+sim-all-mac:
+	@for test in $(TESTS); do \
+		$(MAKE) -f Makefile.mac $$test || exit $$?; \
+	done
+
+clean-mac:
+	rm -rf build
