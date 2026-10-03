@@ -3,5 +3,5 @@ module line_decoder (
     input  logic [3:0] addr,
     output logic       single_wire
 );
-    assign single_wire = ________; // TODO
+    assign single_wire = (addr == select); // TODO
 endmodule

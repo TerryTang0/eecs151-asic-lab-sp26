@@ -6,8 +6,8 @@ module shift_register_behavioral (
     logic [3:0] shift_reg;
 
     always_ff @(posedge clk) begin
-        // TODO
+        shift_reg <= {shift_reg[2:0], in};
     end
 
-    ____ out = ____; // TODO
+    assign out = shift_reg; // TODO
 endmodule

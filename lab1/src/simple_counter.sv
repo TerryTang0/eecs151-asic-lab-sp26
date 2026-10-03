@@ -5,15 +5,18 @@ module simple_counter (
 );
     logic [1:0] counter;
 
-    always_ff @(________ or ________) begin
-        if (____) begin // TODO
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset) begin // TODO
             counter <= 2'b00;
         end else begin
-            case (____) // TODO
-                // TODO
+            case (counter) // TODO
+                2'b00: counter <= 2'b01;
+                2'b01: counter <= 2'b10;
+                2'b10: counter <= 2'b11; 
+                2'b11: counter <= 2'b00;// TODO
             endcase
         end
     end
 
-    ____ counter_out = ____; // TODO
+    assign counter_out = counter; // TODO
 endmodule

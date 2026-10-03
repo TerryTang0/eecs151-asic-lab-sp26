@@ -14,7 +14,7 @@ TESTS := \
 EXTRA_shift_register_structural := src/d_flip_flop.sv
 EXTRA_decoder_4_to_16 := src/line_decoder.sv
 
-.PHONY: $(TESTS) sim-all-mac clean-mac
+.PHONY: $(TESTS) sim-all-local clean-mac
 
 VFLAGS := --binary --timing --trace-vcd -Wno-fatal -Wno-TIMESCALEMOD -DIVERILOG=1
 
@@ -27,9 +27,9 @@ $(TESTS):
 		sim/$@_tb.sv \
 		$(EXTRA_$@) >/dev/null
 	@./build/$@/V$@_tb
-sim-all-mac:
+sim-all-local:
 	@for test in $(TESTS); do \
-		$(MAKE) -f Makefile.mac $$test || exit $$?; \
+		$(MAKE) -f Makefile.local $$test || exit $$?; \
 	done
 
 clean-mac:
