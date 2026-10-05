@@ -1,0 +1,36 @@
+VERILATOR := verilator
+
+VFLAGS := --binary --timing --trace-vcd \
+	-Wno-fatal \
+	-Wno-TIMESCALEMOD \
+	-DCLOCK_PERIOD=1.00
+
+RTL_SRCS := \
+	src/fir.sv \
+	src/EECS151.sv \
+	src/addertree.sv \
+	src/fir_tb_local.sv
+
+.PHONY: sim-rtl clean-local
+
+sim-rtl:
+	@mkdir -p build/local-rtl
+	$(VERILATOR) $(VFLAGS) \
+		--Mdir build/local-rtl \
+		--top-module fir_tb \
+		$(RTL_SRCS)
+	./build/local-rtl/Vfir_tb
+
+sim-rtl-file:
+	@mkdir -p build/local-rtl-file
+	$(VERILATOR) $(VFLAGS) \
+		--Mdir build/local-rtl-file \
+		--top-module fir_tb_file \
+		src/fir.sv \
+		src/EECS151.sv \
+		src/addertree.sv \
+		src/fir_tb_file_local.sv
+	./build/local-rtl-file/Vfir_tb_file
+
+clean-local:
+	rm -rf build/local-rtl build/fir_rtl.vcd
