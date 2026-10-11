@@ -34,3 +34,15 @@ sim-rtl-file:
 
 clean-local:
 	rm -rf build/local-rtl build/fir_rtl.vcd
+
+.PHONY: sim-q1a
+
+sim-q1a:
+	@mkdir -p build/local-q1a
+	$(VERILATOR) $(VFLAGS) \
+		--Mdir build/local-q1a \
+		--top-module Q1a_tb \
+		src/EECS151.sv \
+		src/Q1a.sv \
+		src/Q1a_tb.sv
+	./build/local-q1a/VQ1a_tb
