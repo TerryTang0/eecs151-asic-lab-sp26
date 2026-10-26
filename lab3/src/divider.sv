@@ -70,7 +70,7 @@ module divider #(
           next_remainder = remainder_reg;
           next_quotient = quotient_reg << 1;
 
-          if (next_counter < WIDTH + 1) begin
+          if (next_counter < WIDTH'(WIDTH + 1)) begin
             next_state = CALC;
           end else begin
             next_state = DONE;
@@ -78,9 +78,9 @@ module divider #(
 
         end else begin
           next_remainder = remainder_reg - divisor_reg;
-          next_quotient = (quotient_reg << 1) | 1'b1;
+          next_quotient = (quotient_reg << 1) | WIDTH'(1);
 
-          if (next_counter < WIDTH + 1) begin
+          if (next_counter < WIDTH'(WIDTH + 1)) begin
             next_state = CALC;
           end else begin
             next_state = DONE;
@@ -92,6 +92,11 @@ module divider #(
 
       DONE: begin
         next_state = IDLE;
+      end
+
+      default: begin
+        next_state = IDLE;
+        next_counter = 0;
       end
 
     endcase
