@@ -1,0 +1,31 @@
+# ==========================================
+# GCD Synthesis using Yosys + SKY130
+# EECS 251A - ASIC Lab 3
+# Run from the lab3 directory
+# ==========================================
+
+# 1. Load technology library
+read_liberty -lib build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# 2. Read RTL source files
+read_verilog -sv src/EECS151.sv src/gcd.sv src/gcd_datapath.sv src/gcd_control.sv
+
+# 3. Check design hierarchy
+hierarchy -check -top gcd
+
+# 4. Perform generic synthesis
+synth -top gcd -flatten
+
+# 5. Technology mapping
+dfflibmap -liberty build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# 6. Clean up and validate
+clean
+check
+
+# 7. Generate statistics
+stat -liberty build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# 8. Export mapped netlist
+write_verilog -noattr build/yosys/gcd_sky130_mapped.v
