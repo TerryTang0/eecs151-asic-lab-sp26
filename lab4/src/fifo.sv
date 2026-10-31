@@ -42,4 +42,27 @@ module fifo #(
 
     // Your code here (don't forget the reset!)
 
+    // Reset
+    always_ff @(posedge clk) begin
+        if (rst) begin 
+            rptr <= '0;
+            wptr <= '0;
+            buffer <= '0;
+            full <= '0;
+        end
+
+    // Input
+    always_ff @(posedge clk) begin
+        if (enq_fire) begin
+            buffer [wptr] <= enq_data;
+            wptr <= wptr + 1b'1;
+        end
+    
+        // Output
+        if (dep_fire) begin
+            deq_data <= buffer [rptr];
+            rptr <= rptr +1b'1;
+        end
+
+
 endmodule
