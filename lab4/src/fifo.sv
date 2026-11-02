@@ -42,27 +42,42 @@ module fifo #(
 
     // Your code here (don't forget the reset!)
 
-    // Reset
+    assign enq_rdy = !full;
+    assign deq_val = (rptr != wptr) || full;
+    assign deq_data = buffer[rptr];
+
+    
     always_ff @(posedge clk) begin
-        if (rst) begin 
+
+        // Reset
+        if (reset) begin 
             rptr <= '0;
             wptr <= '0;
-            buffer <= '0;
             full <= '0;
         end
 
-    // Input
-    always_ff @(posedge clk) begin
-        if (enq_fire) begin
-            buffer [wptr] <= enq_data;
-            wptr <= wptr + 1b'1;
-        end
-    
-        // Output
-        if (dep_fire) begin
-            deq_data <= buffer [rptr];
-            rptr <= rptr +1b'1;
-        end
+        // Input
+        else begin
 
+            // Enqueue
+            if (enq_fire) begin
+                buffer [wptr] <= enq_data;
+                wptr <= (wptr + 1'b1);
+            end
+        
+            // Dequeue
+            if (deq_fire) begin
+                rptr <= (rptr + 1'b1);
+            end
+
+            // Full
+            if (enq_fire && !deq_fire) begin
+                full <= ((wptr + 1'b1) == rptr);
+            end
+            else if (!enq_fire && deq_fire) begin
+                full <= '0;
+            end
+        end
+    end
 
 endmodule
