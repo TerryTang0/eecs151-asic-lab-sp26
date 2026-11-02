@@ -46,9 +46,11 @@ module gcd_coprocessor #(
 
 
   // TODO: Instantiate gcd_datapath
-  gcd_datapath gcd_datapath(
-    .operands_bits_A (operands_bits_A),
-    .operands_bits_B (operands_bits_B),
+  gcd_datapath #(
+    .W(W)
+  ) gcd_datapath (
+    .operands_bits_A (fifoA_data),
+    .operands_bits_B (fifoB_data),
     .result_bits_data (datapath_data),
     .clk (clk),
     .reset (reset),
@@ -77,32 +79,41 @@ module gcd_coprocessor #(
   );
 
   // TODO: Instantiate request FIFO
-  fifo fifoA(
+  fifo #(
+    .WIDTH(W), 
+    .LOGDEPTH(2)
+  ) fifoA (
     .clk (clk),
     .reset (reset),
-    .enq_val (operands_val),
+    .enq_val (operands_val && operands_rdy),
     .enq_data (operands_bits_A),
     .enq_rdy (fifoA_rdy),
     .deq_val (fifoA_val),
     .deq_data (fifoA_data),
-    .deq_rdy (control_enq_rdy)
+    .deq_rdy (control_enq_rdy && fifo_val)
   );
 
-  fifo fifoB(
+  fifo #(
+    .WIDTH(W), 
+    .LOGDEPTH(2)
+  ) fifoB (
     .clk (clk),
     .reset (reset),
-    .enq_val (operands_val),
+    .enq_val (operands_val && operands_rdy),
     .enq_data (operands_bits_B),
     .enq_rdy (fifoB_rdy),
     .deq_val (fifoB_val),
     .deq_data (fifoB_data),
-    .deq_rdy (control_enq_rdy)
+    .deq_rdy (control_enq_rdy && fifo_val)
   );
 
   assign operands_rdy = fifoA_rdy && fifoB_rdy;
 
   // TODO: Instantiate response FIFO
-  fifo result(
+  fifo #(
+    .WIDTH(W), 
+    .LOGDEPTH(2)
+  ) result (
     .clk (clk),
     .reset (reset),
     .enq_val (control_deq_val),
