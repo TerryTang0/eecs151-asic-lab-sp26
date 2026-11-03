@@ -1,0 +1,16 @@
+
+read_verilog -sv src/EECS151.sv src/fifo.sv src/gcd_datapath.sv src/gcd_control.sv src/gcd_coprocessor.sv
+
+hierarchy -check -top gcd_coprocessor
+
+synth -top gcd_coprocessor -noabc
+
+dfflibmap -liberty ../lab3/build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+abc -liberty ../lab3/build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib -D 5000
+
+clean
+check
+stat -liberty ../lab3/build/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+write_verilog -noattr build/yosys/gcd_32bit/gcd_coprocessor_abc_5ns.v
