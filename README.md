@@ -3,8 +3,8 @@
 This repo contains my independent lab work of **UC Berkeley EECS 151: Introduction to Digital Design and Integrated Circuits**, focusing on SystemVerilog, RTL design, digital logic, ASIC synthesis, static timing analysis (STA), and physical design.
 
 ## Learning Resources
-- **Lecture Videos (Fall 2025):** [EECS 151 Lecture Recording](https://www.youtube.com/watch?v=ibmNx5xE72Y&t=3480s)
-- **Lab Materials (Spring 2026):** [UC Berkeley EECS 151/251A](https://inst.eecs.berkeley.edu/~eecs151/sp26/)
+- **Lecture Videos (Fa25):** [EECS 151 Lecture Recording](https://www.youtube.com/watch?v=ibmNx5xE72Y&t=3480s)
+- **Lab Materials (Sp26):** [UC Berkeley EECS 151/251A](https://inst.eecs.berkeley.edu/~eecs151/sp26/)
 
 **Disclaimer:** For UCB EECS-registered student, please don't copy my work or use this repo as reference. Since I am not officially enrolled in UC Berkeley EECS 151, I'm not able to connect to EECS server and use commercial tools. Instead, I use open-source tools to reproduce comparable design and verification workflow, following the lab instructions.
 
