@@ -48,15 +48,4 @@ The official Spring 2026 lab configuration uses:
 Therefore, timing reports obtained using my local flow are not directly equivalent to the official Berkeley results.
 
 
-## Final Academic Integrity
-
-**Attention to students currently enrolled in UC Berkeley EECS 151/251A:**
-
-Please **DO NOT copy, submit, or plagiarize** any code, answers, reports, or completed lab work from this repository.
-
-This repository contains my personal self-study work and is intended for educational reference and documentation only.
-
-Students should independently complete their assignments and follow UC Berkeley's academic-integrity policies.
-
-
 **Focus Areas:** Digital IC Design · SystemVerilog · RTL Design · Logic Synthesis · Static Timing Analysis · ASIC Design Flow · Physical Design · VLSI
