@@ -1,0 +1,538 @@
+OpenROAD bazel-nostamp 
+Features included (+) or not (-): -GPU -GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /Users/terrysmac/Documents/eda-tools/OpenROAD/test/sky130hd/sky130hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /Users/terrysmac/Documents/eda-tools/OpenROAD/test/sky130hd/sky130_fd_sc_hd_merged.lef, created 437 library cells
+GCD netlist loaded successfully
+Design area 19147 um^2 100% utilization.
+[WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.120, 10.880).
+[INFO IFP-0001] Added 212 rows of 1260 site unithd.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 600.000 600.000 ) um
+[INFO IFP-0101] Core BBox: ( 10.120 10.880 ) ( 589.720 587.520 ) um
+[INFO IFP-0102] Core area:                       334220.544 um^2
+[INFO IFP-0103] Total instances area:             19147.114 um^2
+[INFO IFP-0104] Effective utilization:                0.057
+[INFO IFP-0105] Number of instances:                   1183
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of available slots 2174
+[INFO PPL-0002] Number of I/O             102
+[INFO PPL-0003] Number of I/O w/sink      102
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 32992.92 um.
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 10.120 10.880 ) ( 589.720 587.520 ) um
+[INFO GPL-0016] Core area:                  334220.544 um^2
+[INFO GPL-0036] Movable instances area:      19147.114 um^2
+[INFO GPL-0037] Total instances area:        19147.114 um^2
+[INFO GPL-0035] Pin density area adjust:       622.434 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:              1183
+[INFO GPL-0007] Movable instances:                1183
+[INFO GPL-0008] Fixed instances:                     0
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                   1251
+[INFO GPL-0011] Number of pins:                   4776
+[INFO GPL-0012] Die BBox:       (  0.000  0.000 ) ( 600.000 600.000 ) um
+[INFO GPL-0013] Placement BBox: ( 10.120 10.880 ) ( 589.720 587.520 ) um
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                334220.544 um^2
+[INFO GPL-0017] Fixed instances area:            0.000 um^2
+[INFO GPL-0018] Movable instances area:      19769.547 um^2
+[INFO GPL-0019] Utilization:                     5.915 %
+[INFO GPL-0020] Standard cells area:         19769.547 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 1183	Region center = 0
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00000011 HPWL: 103165160
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00000010 HPWL: 17020108
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.00000011 HPWL: 17440059
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00000008 HPWL: 17656198
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00000008 HPWL: 17671912
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.5000
+[INFO GPL-0024] Movable insts average area:     16.711 um^2
+[INFO GPL-0025] Ideal bin area:                 33.423 um^2
+[INFO GPL-0026] Ideal bin count:                  9999
+[INFO GPL-0027] Total bin area:             334220.544 um^2
+[INFO GPL-0028] Bin count (X, Y):          64 ,     64
+[INFO GPL-0029] Bin size (W * H):       9.056 *  9.010 um
+[INFO GPL-0030] Number of bins:                   4096
+[INFO GPL-0084] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9771 |  6.193308e+03 |   +0.00% |  4.23e-16 |      
+       10 |   0.9717 |  6.924131e+03 |  +11.80% |  6.89e-16 |      
+       20 |   0.9720 |  6.951599e+03 |   +0.40% |  1.12e-15 |      
+       30 |   0.9721 |  6.950773e+03 |   -0.01% |  1.83e-15 |      
+       40 |   0.9723 |  6.951741e+03 |   +0.01% |  2.98e-15 |      
+       50 |   0.9723 |  6.950219e+03 |   -0.02% |  4.85e-15 |      
+       60 |   0.9722 |  6.940983e+03 |   -0.13% |  7.90e-15 |      
+       70 |   0.9721 |  6.935790e+03 |   -0.07% |  1.29e-14 |      
+       80 |   0.9721 |  6.939564e+03 |   +0.05% |  2.10e-14 |      
+       90 |   0.9721 |  6.946176e+03 |   +0.10% |  3.42e-14 |      
+      100 |   0.9721 |  6.950568e+03 |   +0.06% |  5.56e-14 |      
+      110 |   0.9720 |  6.955510e+03 |   +0.07% |  9.06e-14 |      
+      120 |   0.9720 |  6.969111e+03 |   +0.20% |  1.48e-13 |      
+      130 |   0.9719 |  6.997287e+03 |   +0.40% |  2.41e-13 |      
+      140 |   0.9718 |  7.051773e+03 |   +0.78% |  3.92e-13 |      
+      150 |   0.9716 |  7.156229e+03 |   +1.48% |  6.38e-13 |      
+      160 |   0.9712 |  7.342040e+03 |   +2.60% |  1.04e-12 |      
+      170 |   0.9704 |  7.627665e+03 |   +3.89% |  1.69e-12 |      
+      180 |   0.9644 |  8.074495e+03 |   +5.86% |  2.76e-12 |      
+      190 |   0.9601 |  8.716175e+03 |   +7.95% |  4.49e-12 |      
+      200 |   0.9517 |  9.593760e+03 |  +10.07% |  7.32e-12 |      
+      210 |   0.9405 |  1.060963e+04 |  +10.59% |  1.19e-11 |      
+      220 |   0.9251 |  1.160197e+04 |   +9.35% |  1.94e-11 |      
+      230 |   0.9051 |  1.329484e+04 |  +14.59% |  3.16e-11 |      
+      240 |   0.8743 |  1.520855e+04 |  +14.39% |  5.15e-11 |      
+      250 |   0.8480 |  1.684453e+04 |  +10.76% |  8.38e-11 |      
+      260 |   0.8101 |  1.921935e+04 |  +14.10% |  1.37e-10 |      
+      270 |   0.7768 |  2.142982e+04 |  +11.50% |  2.22e-10 |      
+      280 |   0.7415 |  2.371367e+04 |  +10.66% |  3.62e-10 |      
+      290 |   0.6944 |  2.626612e+04 |  +10.76% |  5.90e-10 |      
+      300 |   0.6439 |  2.840931e+04 |   +8.16% |  9.60e-10 |      
+      310 |   0.5946 |  3.020511e+04 |   +6.32% |  1.56e-09 |      
+      320 |   0.5351 |  3.161362e+04 |   +4.66% |  2.55e-09 |      
+      330 |   0.4601 |  3.202686e+04 |   +1.31% |  4.15e-09 |      
+      340 |   0.3929 |  3.243406e+04 |   +1.27% |  6.76e-09 |      
+      350 |   0.3433 |  3.367850e+04 |   +3.84% |  1.10e-08 |      
+      360 |   0.3115 |  3.344519e+04 |   -0.69% |  1.62e-08 |      
+      370 |   0.2796 |  3.343213e+04 |   -0.04% |  2.39e-08 |      
+      380 |   0.2470 |  3.303678e+04 |   -1.18% |  3.52e-08 |      
+      390 |   0.2162 |  3.289752e+04 |   -0.42% |  5.18e-08 |      
+      400 |   0.1904 |  3.296761e+04 |   +0.21% |  7.63e-08 |      
+      410 |   0.1601 |  3.309966e+04 |   +0.40% |  1.12e-07 |      
+      420 |   0.1438 |  3.314907e+04 |   +0.15% |  1.66e-07 |      
+      430 |   0.1247 |  3.320450e+04 |   +0.17% |  2.44e-07 |      
+      440 |   0.1149 |  3.318789e+04 |   -0.05% |  3.59e-07 |      
+      450 |   0.1033 |  3.332509e+04 |   +0.41% |  5.30e-07 |      
+      452 |   0.0996 |  3.335250e+04 |          |  5.95e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 452
+[INFO GPL-1002] Placed Cell Area            19769.5471
+[INFO GPL-1003] Available Free Area         334220.5440
+[INFO GPL-1004] Minimum Feasible Density        0.0600 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.0657
+[INFO GPL-1008]     - For 80% usage of free space: 0.0739
+[INFO GPL-1009]     - For 50% usage of free space: 0.1183
+[INFO GPL-1014] Final placement area: 19769.55 (+0.00%)
+[INFO GPL-1018] Final HPWL (um): 33407.18
+[INFO DPL-0006] Core area: 334220.54 um^2
+[INFO DPL-0007] Movable instances area: 19147.11 um^2
+[INFO DPL-0008] Fixed instances area within core: 0.00 um^2
+[INFO DPL-0009] Utilization: 5.7%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 1183 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |        323 |        87 |       236
+        1 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 1.
+[INFO DPL-0500] Runtime: 0.01s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                1227
+total displacement       3692.0 u
+average displacement        3.1 u
+max displacement            9.6 u
+original HPWL           33407.2 u
+legalized HPWL          35992.1 u
+delta HPWL                    8 %
+
+
+===== BEFORE REPAIR =====
+worst slack max -6.86
+Startpoint: gcd_datapath/_1030_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: gcd_datapath/_1032_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ gcd_datapath/_1030_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.42    0.42 ^ gcd_datapath/_1030_/Q (sky130_fd_sc_hd__dfrtp_1)
+   0.17    0.59 ^ gcd_datapath/_0994_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.25    0.84 ^ gcd_datapath/_0996_/X (sky130_fd_sc_hd__maj3_1)
+   0.12    0.96 v gcd_datapath/_1001_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.46    1.42 ^ gcd_datapath/_1004_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.19    1.62 v gcd_datapath/_1007_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.40    2.02 ^ gcd_datapath/_1012_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.17    2.19 v gcd_datapath/_1015_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.39    2.58 ^ gcd_datapath/_1018_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.19    2.77 v gcd_datapath/_1022_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.43    3.20 ^ gcd_datapath/_1025_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.26    3.46 v gcd_datapath/_1028_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.40    3.86 ^ gcd_datapath/_0518_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.18    4.04 v gcd_datapath/_0521_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.39    4.43 ^ gcd_datapath/_0525_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.22    4.65 v gcd_datapath/_0529_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.41    5.06 ^ gcd_datapath/_0533_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.15    5.20 v gcd_datapath/_0534_/Y (sky130_fd_sc_hd__nand3b_1)
+   0.10    5.30 ^ gcd_datapath/_0536_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.11    5.41 v gcd_datapath/_0537_/Y (sky130_fd_sc_hd__a21oi_1)
+   3.13    8.54 ^ gcd_control/_15_/Y (sky130_fd_sc_hd__nor4_1)
+   1.95   10.48 v gcd_datapath/_0691_/Y (sky130_fd_sc_hd__nor2_1)
+   0.79   11.27 ^ gcd_datapath/_0879_/Y (sky130_fd_sc_hd__a222oi_1)
+   0.12   11.39 v gcd_datapath/_0881_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00   11.39 v gcd_datapath/_1032_/D (sky130_fd_sc_hd__dfrtp_1)
+          11.39   data arrival time
+
+   5.00    5.00   clock clk (rise edge)
+   0.00    5.00   clock network delay (ideal)
+  -0.10    4.90   clock uncertainty
+   0.00    4.90   clock reconvergence pessimism
+           4.90 ^ gcd_datapath/_1032_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.38    4.52   library setup time
+           4.52   data required time
+---------------------------------------------------------
+           4.52   data required time
+         -11.39   data arrival time
+---------------------------------------------------------
+          -6.86   slack (VIOLATED)
+
+
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      1251
+       10 |     +0.0% |       0 |       0 |             0 |      1241
+       20 |     +0.0% |       0 |       0 |             0 |      1231
+       30 |     +0.0% |       0 |       0 |             0 |      1221
+       40 |     +0.0% |       0 |       0 |             0 |      1211
+       50 |     +0.0% |       0 |       0 |             0 |      1201
+       60 |     +0.0% |       0 |       0 |             0 |      1191
+       70 |     +0.0% |       0 |       0 |             0 |      1181
+       80 |     +0.0% |       0 |       0 |             0 |      1171
+       90 |     +0.0% |       0 |       0 |             0 |      1161
+      100 |     +0.0% |       0 |       0 |             0 |      1151
+      110 |     +0.0% |       0 |       0 |             0 |      1141
+      120 |     +0.0% |       0 |       0 |             0 |      1131
+      130 |     +0.0% |       0 |       0 |             0 |      1121
+      140 |     +0.0% |       0 |       0 |             0 |      1111
+      150 |     +0.0% |       0 |       0 |             0 |      1101
+      160 |     +0.0% |       0 |       0 |             0 |      1091
+      170 |     +0.0% |       0 |       0 |             0 |      1081
+      180 |     +0.0% |       0 |       0 |             0 |      1071
+      190 |     +0.0% |       0 |       0 |             0 |      1061
+      200 |     +0.0% |       0 |       0 |             0 |      1051
+      210 |     +0.0% |       0 |       0 |             0 |      1041
+      220 |     +0.0% |       0 |       0 |             0 |      1031
+      230 |     +0.2% |       0 |       4 |             2 |      1021
+      240 |     +0.2% |       0 |       4 |             2 |      1011
+      250 |     +0.2% |       0 |       4 |             2 |      1001
+      260 |     +0.2% |       0 |       4 |             2 |       991
+      270 |     +0.2% |       0 |       4 |             2 |       981
+      280 |     +0.2% |       0 |       4 |             2 |       971
+      290 |     +0.2% |       0 |       4 |             2 |       961
+      300 |     +1.0% |       0 |      19 |             6 |       951
+      310 |     +1.0% |       0 |      19 |             6 |       941
+      320 |     +1.0% |       0 |      19 |             6 |       931
+      330 |     +1.0% |       0 |      19 |             6 |       921
+      340 |     +1.0% |       0 |      19 |             6 |       911
+      350 |     +1.0% |       0 |      19 |             6 |       901
+      360 |     +1.0% |       0 |      19 |             6 |       891
+      370 |     +1.3% |       0 |      25 |             9 |       881
+      380 |     +1.6% |       0 |      31 |            12 |       871
+      390 |     +1.9% |       0 |      37 |            15 |       861
+      400 |     +2.0% |       0 |      39 |            16 |       851
+      410 |     +2.2% |       0 |      43 |            18 |       841
+      420 |     +2.2% |       0 |      43 |            18 |       831
+      430 |     +2.2% |       0 |      43 |            18 |       821
+      440 |     +2.2% |       0 |      43 |            18 |       811
+      450 |     +2.2% |       0 |      43 |            18 |       801
+      460 |     +2.2% |       0 |      43 |            18 |       791
+      470 |     +2.2% |       0 |      43 |            18 |       781
+      480 |     +2.2% |       0 |      43 |            18 |       771
+      490 |     +2.2% |       0 |      43 |            18 |       761
+      500 |     +2.2% |       0 |      43 |            18 |       751
+      510 |     +2.2% |       0 |      43 |            18 |       741
+      520 |     +2.2% |       0 |      43 |            18 |       731
+      530 |     +2.2% |       0 |      43 |            18 |       721
+      540 |     +2.2% |       0 |      43 |            18 |       711
+      550 |     +2.2% |       0 |      43 |            18 |       701
+      560 |     +2.2% |       0 |      43 |            18 |       691
+      570 |     +2.2% |       0 |      43 |            18 |       681
+      580 |     +2.2% |       0 |      43 |            18 |       671
+      590 |     +2.2% |       0 |      43 |            18 |       661
+      600 |     +2.2% |       0 |      43 |            18 |       651
+      610 |     +2.2% |       0 |      43 |            18 |       641
+      620 |     +2.2% |       0 |      43 |            18 |       631
+      630 |     +2.2% |       0 |      43 |            18 |       621
+      640 |     +2.2% |       0 |      43 |            18 |       611
+      650 |     +2.2% |       0 |      43 |            18 |       601
+      660 |     +2.5% |       0 |      47 |            20 |       591
+      670 |     +2.5% |       0 |      47 |            20 |       581
+      680 |     +2.5% |       0 |      47 |            20 |       571
+      690 |     +2.5% |       0 |      47 |            20 |       561
+      700 |     +2.5% |       0 |      47 |            20 |       551
+      710 |     +2.5% |       0 |      47 |            20 |       541
+      720 |     +2.5% |       0 |      47 |            20 |       531
+      730 |     +2.5% |       0 |      47 |            20 |       521
+      740 |     +2.5% |       0 |      47 |            20 |       511
+      750 |     +2.5% |       0 |      47 |            20 |       501
+      760 |     +2.5% |       0 |      47 |            20 |       491
+      770 |     +2.5% |       0 |      47 |            20 |       481
+      780 |     +2.5% |       0 |      47 |            20 |       471
+      790 |     +2.5% |       0 |      47 |            20 |       461
+      800 |     +2.5% |       0 |      47 |            20 |       451
+      810 |     +2.5% |       0 |      47 |            20 |       441
+      820 |     +2.5% |       0 |      47 |            20 |       431
+      830 |     +2.5% |       0 |      47 |            20 |       421
+      840 |     +2.5% |       0 |      47 |            20 |       411
+      850 |     +2.5% |       0 |      47 |            20 |       401
+      860 |     +2.5% |       0 |      47 |            20 |       391
+      870 |     +2.5% |       0 |      47 |            20 |       381
+      880 |     +2.5% |       0 |      47 |            20 |       371
+      890 |     +2.5% |       0 |      47 |            20 |       361
+      900 |     +2.5% |       0 |      47 |            20 |       351
+      910 |     +2.5% |       0 |      47 |            20 |       341
+      920 |     +2.6% |       0 |      49 |            21 |       331
+      930 |     +2.7% |       0 |      51 |            22 |       321
+      940 |     +2.7% |       0 |      51 |            22 |       311
+      950 |     +2.7% |       0 |      51 |            22 |       301
+      960 |     +2.7% |       0 |      51 |            22 |       291
+      970 |     +2.7% |       0 |      51 |            22 |       281
+      980 |     +2.7% |       0 |      51 |            22 |       271
+      990 |     +2.7% |       0 |      51 |            22 |       261
+     1000 |     +2.7% |       0 |      51 |            22 |       251
+     1010 |     +2.7% |       0 |      51 |            22 |       241
+     1020 |     +2.7% |       0 |      51 |            22 |       231
+     1030 |     +2.7% |       0 |      51 |            22 |       221
+     1040 |     +2.7% |       0 |      51 |            22 |       211
+     1050 |     +2.7% |       0 |      51 |            22 |       201
+     1060 |     +2.9% |       0 |      55 |            24 |       191
+     1070 |     +2.9% |       0 |      55 |            24 |       181
+     1080 |     +2.9% |       0 |      55 |            24 |       171
+     1090 |     +2.9% |       0 |      55 |            24 |       161
+     1100 |     +2.9% |       0 |      55 |            24 |       151
+     1110 |     +2.9% |       0 |      55 |            24 |       141
+     1120 |     +2.9% |       0 |      55 |            24 |       131
+     1130 |     +2.9% |       0 |      55 |            24 |       121
+     1140 |     +2.9% |       0 |      55 |            24 |       111
+     1150 |     +2.9% |       0 |      55 |            24 |       101
+     1160 |     +2.9% |       0 |      55 |            24 |        91
+     1170 |     +2.9% |       0 |      55 |            24 |        81
+     1180 |     +2.9% |       0 |      55 |            24 |        71
+     1190 |     +3.2% |       0 |      62 |            25 |        61
+     1200 |     +3.2% |       0 |      62 |            25 |        51
+     1210 |     +3.2% |       0 |      62 |            25 |        41
+     1220 |     +3.2% |       0 |      62 |            25 |        31
+     1230 |     +3.2% |       0 |      62 |            25 |        21
+     1240 |     +3.2% |       0 |      62 |            25 |        11
+     1250 |     +3.2% |       0 |      62 |            25 |         1
+    final |     +3.2% |       0 |      62 |            25 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 21 slew violations.
+[INFO RSZ-0035] Found 25 fanout violations.
+[INFO RSZ-0038] Inserted 62 buffers in 25 nets.
+[INFO RSZ-0504] Runtime: 0.05s
+[INFO DPL-0006] Core area: 334220.54 um^2
+[INFO DPL-0007] Movable instances area: 19767.71 um^2
+[INFO DPL-0008] Fixed instances area within core: 0.00 um^2
+[INFO DPL-0009] Utilization: 5.9%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 1245 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |        235 |        35 |       200
+        1 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 1.
+[INFO DPL-0500] Runtime: 0.01s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                 598
+total displacement        300.3 u
+average displacement        0.2 u
+max displacement           10.9 u
+original HPWL           42572.9 u
+legalized HPWL          42688.7 u
+delta HPWL                    0 %
+
+
+===== AFTER REPAIR =====
+worst slack max -4.31
+Startpoint: gcd_datapath/_1030_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: gcd_datapath/_1073_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ gcd_datapath/_1030_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.42    0.42 v gcd_datapath/_1030_/Q (sky130_fd_sc_hd__dfrtp_1)
+   0.20    0.61 v gcd_datapath/_0994_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.42    1.04 v gcd_datapath/_0996_/X (sky130_fd_sc_hd__maj3_1)
+   0.33    1.37 ^ gcd_datapath/_1001_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.23    1.59 v gcd_datapath/_1004_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.37    1.96 ^ gcd_datapath/_1007_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.19    2.16 v gcd_datapath/_1012_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.34    2.50 ^ gcd_datapath/_1015_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.18    2.68 v gcd_datapath/_1018_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.39    3.07 ^ gcd_datapath/_1022_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.21    3.28 v gcd_datapath/_1025_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.60    3.87 ^ gcd_datapath/_1028_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.22    4.10 v gcd_datapath/_0518_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.38    4.47 ^ gcd_datapath/_0521_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.19    4.66 v gcd_datapath/_0525_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.47    5.13 ^ gcd_datapath/_0529_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.21    5.34 v gcd_datapath/_0533_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.15    5.49 ^ gcd_datapath/_0534_/Y (sky130_fd_sc_hd__nand3b_1)
+   0.07    5.56 v gcd_datapath/_0536_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.26    5.81 ^ gcd_datapath/_0537_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.39    6.20 ^ gcd_control/_16_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.14    6.34 ^ gcd_control/_06_/X (sky130_fd_sc_hd__a21o_1)
+   0.69    7.02 ^ gcd_datapath/fanout13/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.96    7.98 ^ gcd_datapath/fanout10/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.92    8.90 ^ gcd_datapath/fanout9/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.08    8.99 v gcd_datapath/_0637_/Y (sky130_fd_sc_hd__nor2_1)
+   0.14    9.13 ^ gcd_datapath/_0639_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.00    9.13 ^ gcd_datapath/_1073_/D (sky130_fd_sc_hd__dfrtp_1)
+           9.13   data arrival time
+
+   5.00    5.00   clock clk (rise edge)
+   0.00    5.00   clock network delay (ideal)
+  -0.10    4.90   clock uncertainty
+   0.00    4.90   clock reconvergence pessimism
+           4.90 ^ gcd_datapath/_1073_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.08    4.82   library setup time
+           4.82   data required time
+---------------------------------------------------------
+           4.82   data required time
+          -9.13   data arrival time
+---------------------------------------------------------
+          -4.31   slack (VIOLATED)
+
+
+
+===== AFTER SETUP TIMING OPTIMIZATION =====
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0094] Found 66 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 66 out of 66 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |    TNS     |  Viol  |  Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpoint
+------------------------------------------------------------------------------------------------------------------------------
+       0* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -4.314 |     -235.4 |     66 | gcd_datapath/_1073_/D
+     617* |       1 |     131 |       28 |      5 |    28 |    +4.6% |   -0.478 |      -26.6 |     66 | gcd_datapath/_1032_/D
+    final |       1 |     134 |       28 |      5 |    29 |    +4.6% |   -0.478 |      -26.6 |     66 | gcd_datapath/_1032_/D
+------------------------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0059] Removed 1 buffers.
+[INFO RSZ-0040] Inserted 28 buffers.
+[INFO RSZ-0051] Resized 134 instances: 134 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 29 instances.
+[INFO RSZ-0049] Cloned 5 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0505] Runtime: 2.13s
+[INFO DPL-0006] Core area: 334220.54 um^2
+[INFO DPL-0007] Movable instances area: 20683.59 um^2
+[INFO DPL-0008] Fixed instances area within core: 0.00 um^2
+[INFO DPL-0009] Utilization: 6.2%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 1277 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |        238 |        48 |       190
+        1 |          4 |         2 |         2
+        2 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 2.
+[INFO DPL-0500] Runtime: 0.01s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                 746
+total displacement        323.6 u
+average displacement        0.3 u
+max displacement           12.3 u
+original HPWL           44139.4 u
+legalized HPWL          44373.8 u
+delta HPWL                    1 %
+
+worst slack max -0.48
+Startpoint: gcd_datapath/_1030_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: gcd_datapath/_1063_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ gcd_datapath/_1030_/CLK (sky130_fd_sc_hd__dfrtp_2)
+   0.38    0.38 v gcd_datapath/_1030_/Q (sky130_fd_sc_hd__dfrtp_2)
+   0.15    0.52 v gcd_datapath/_0994_/Y (sky130_fd_sc_hd__nand2b_4)
+   0.36    0.88 v gcd_datapath/_0996_/X (sky130_fd_sc_hd__maj3_4)
+   0.29    1.17 ^ gcd_datapath/_1001_/Y (sky130_fd_sc_hd__a211oi_4)
+   0.13    1.30 v gcd_datapath/_1004_/Y (sky130_fd_sc_hd__o311ai_4)
+   0.29    1.59 ^ gcd_datapath/_1007_/Y (sky130_fd_sc_hd__a311oi_4)
+   0.13    1.72 v gcd_datapath/_1012_/Y (sky130_fd_sc_hd__o311ai_4)
+   0.28    2.00 ^ gcd_datapath/_1015_/Y (sky130_fd_sc_hd__a311oi_4)
+   0.13    2.13 v gcd_datapath/_1018_/Y (sky130_fd_sc_hd__o311ai_4)
+   0.29    2.42 ^ gcd_datapath/_1022_/Y (sky130_fd_sc_hd__a311oi_4)
+   0.13    2.55 v gcd_datapath/_1025_/Y (sky130_fd_sc_hd__o311ai_4)
+   0.36    2.92 ^ gcd_datapath/_1028_/Y (sky130_fd_sc_hd__a311oi_4)
+   0.14    3.05 v gcd_datapath/_0518_/Y (sky130_fd_sc_hd__o311ai_4)
+   0.29    3.35 ^ gcd_datapath/_0521_/Y (sky130_fd_sc_hd__a311oi_4)
+   0.12    3.47 v gcd_datapath/_0525_/Y (sky130_fd_sc_hd__o311ai_4)
+   0.28    3.74 ^ gcd_datapath/_0529_/Y (sky130_fd_sc_hd__a311oi_2)
+   0.12    3.86 v gcd_datapath/_0533_/Y (sky130_fd_sc_hd__o311ai_2)
+   0.12    3.98 ^ gcd_datapath/_0534_/Y (sky130_fd_sc_hd__nand3b_1)
+   0.10    4.09 v gcd_datapath/_0536_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.18    4.26 ^ gcd_datapath/_0537_/Y (sky130_fd_sc_hd__a21oi_4)
+   0.30    4.56 ^ gcd_control/_08_/Y (sky130_fd_sc_hd__nor3b_4)
+   0.16    4.72 ^ gcd_datapath/rebuffer64/X (sky130_fd_sc_hd__buf_6)
+   0.10    4.82 ^ gcd_datapath/fanout19/X (sky130_fd_sc_hd__buf_12)
+   0.31    5.13 v gcd_datapath/_0679_/X (sky130_fd_sc_hd__mux2_1)
+   0.06    5.19 ^ gcd_datapath/_0680_/Y (sky130_fd_sc_hd__nand2_1)
+   0.06    5.25 v gcd_datapath/_0681_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00    5.25 v gcd_datapath/_1063_/D (sky130_fd_sc_hd__dfrtp_1)
+           5.25   data arrival time
+
+   5.00    5.00   clock clk (rise edge)
+   0.00    5.00   clock network delay (ideal)
+  -0.10    4.90   clock uncertainty
+   0.00    4.90   clock reconvergence pessimism
+           4.90 ^ gcd_datapath/_1063_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.13    4.77   library setup time
+           4.77   data required time
+---------------------------------------------------------
+           4.77   data required time
+          -5.25   data arrival time
+---------------------------------------------------------
+          -0.48   slack (VIOLATED)
+
+
+Design area 20684 um^2 6% utilization.
