@@ -13,7 +13,7 @@ This repo contains my independent lab work of **UC Berkeley EECS 151: Introducti
 | Open-Source Tools (My Local Environment) | Commercial EDA Tools (UC Berkeley) | Purpose |
 |---|---|---|
 | **Verilator** | Synopsys VCS | RTL simulation and functional verification |
-| **Surfer / GTKWave** | Synopsys Verdi | Waveform visualization and signal debugging |
+| **Surfer** | Synopsys Verdi | Waveform visualization and signal debugging |
 | **Yosys + ABC** | Cadence Genus | RTL synthesis, logic optimization, and technology mapping |
 | **OpenSTA** | Cadence timing analysis (Genus / Innovus) | Static timing analysis, setup and hold verification |
 | **OpenROAD** | Cadence Innovus | Floorplanning, placement, timing optimization, clock-tree synthesis, and routing capabilities |
