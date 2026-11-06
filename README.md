@@ -17,6 +17,7 @@ This repo contains my independent lab work of **UC Berkeley EECS 151: Introducti
 | **Yosys + ABC** | Cadence Genus | RTL synthesis, logic optimization, and technology mapping |
 | **OpenSTA** | Cadence timing analysis (Genus / Innovus) | Static timing analysis, setup and hold verification |
 | **OpenROAD** | Cadence Innovus | Floorplanning, placement, timing optimization, clock-tree synthesis, and routing capabilities |
+| **OpenROAD GUI** | Cadence Innovus GUI | physical-layout visualization, power density, standard-cell inspection, clock-tree visualization, and timing-path debugging|
 
 ## Lab Overview
 
@@ -25,7 +26,7 @@ This repo contains my independent lab work of **UC Berkeley EECS 151: Introducti
 | [Lab 1](./lab1) | SystemVerilog Fundamentals | Digital comparators, decoders, shift registers, counters, and RTL testbenches using Verilator. |
 | [Lab 2](./lab2) | Timing Analysis and FIR Filter | Timing exercises, FIR filter implementation, adder-tree logic, and RTL simulation. |
 | [Lab 3](./lab3) | Logic Synthesis and Static Timing Analysis | GCD and divider designs, synthesis using Yosys/ABC, SKY130 standard-cell mapping, and STA. |
-| [Lab 4](./lab4) | ASIC Physical Design and GCD Coprocessor | FIFO-based GCD coprocessor, floorplanning, standard-cell placement, high-fanout repair, and setup-timing optimization using OpenROAD. |
+| [Lab 4](./lab4) | Physical Design, Place & Route, GCD Coprocessor and ALU| FIFO-based GCD coprocessor, floorplanning, standard-cell placement, setup-timing optimization using OpenROAD and design and test ALU |
 
 
 ### Technology Library Differences
