@@ -1,0 +1,19 @@
+sim.inputs:
+  input_files:
+    - "src/alu_op_pkg.sv"
+    - "src/alu.sv"
+    - "src/alu_tb.sv"
+
+  timescale: "1ns/10ps"
+
+  options:
+    - "-notice"
+    - "-line"
+    - "+lint=all,noVCDE"
+    - "+v2k"
+    - "-sverilog"
+    - "-debug_access+all"
+    - "-kdb"
+
+  top_module: "alu"
+  tb_name: "alu_tb"
