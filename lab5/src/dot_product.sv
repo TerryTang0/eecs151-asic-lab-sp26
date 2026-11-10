@@ -69,4 +69,60 @@ module dot_product #(
 
   // TODO: fill in the rest of this module.
 
+  logic [2:0] state;
+  logic [2:0] next_state;
+
+  logic [ADDR_WIDTH-1:0] a_count;
+  logic [ADDR_WIDTH-1:0] b_count;
+
+  always_ff @(posedge clk) begin
+    if (rst) begin
+      state <= S_LOAD;
+      a_count <= '0;
+      b_count <= '0;
+    end else begin
+      next_state = state;
+    end
+
+  always_comb begin
+
+    next_state = state;
+
+    S_LOAD: begin
+      if (a_fire && (a_count<len)) begin
+        next_state = S_SET_A_ADDR;
+        ce = 1'b1;
+        we = 1'b1;
+        wmask = 4'b1111;
+        addr = {1, a_count};
+        din = a_data;
+      end 
+      else if (b_fire) begin
+        next_state = S_GET_B_ADDR;
+        ce = 1'b1;
+        we = 1'b1;
+        wmask = 4'b1111;
+        addr = {1, b_count};
+        din = b_data;
+      end
+
+        
+    
+
+    S_SET_A_ADDR: begin
+
+
+    S_GET_A: begin
+
+
+    S_SET_B_ADDR: begin
+
+
+    S_GET_B: begin
+
+
+    S_DONE: begin
+
+
+
 endmodule
