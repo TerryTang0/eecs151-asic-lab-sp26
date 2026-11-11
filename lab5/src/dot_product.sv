@@ -214,7 +214,7 @@ module dot_product #(
   //Assertion 2: output signal should stay stable
   Stable_Output: assert property (
     @(posedge clk) disable iff (rst)
-    (c_valid && !c_ready) |=> (c_ready && $stable(c_data))
+    (c_valid && !c_ready) |=> (c_valid && $stable(c_data))
   ) else $error("Output handshake signal is not stable!");
 
 endmodule
