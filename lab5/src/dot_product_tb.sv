@@ -88,8 +88,8 @@ module dot_product_tb;
   // Provide stimulus for DUT
   initial begin
     #0;
-    $vcdpluson;
-    $vcdplusmemon;
+    $dumpfile("dot_product.vcd");
+    $dumpvars(0, dot_product_tb);
 
     rst = 1;
 
@@ -199,7 +199,6 @@ module dot_product_tb;
     else
       $display(">== TESTS FAILED! ==<");
 
-    $vcdplusoff;
     $finish();
   end
 
