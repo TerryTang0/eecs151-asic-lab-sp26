@@ -5,7 +5,7 @@
 
 module dot_product #(
   localparam int ADDR_WIDTH = 5,
-  localparam int WIDTH      = 32
+  parameter int WIDTH      = 32
 ) (
   input  logic                 clk,
   input  logic                 rst,
@@ -49,8 +49,8 @@ module dot_product #(
   logic                 we;
   logic [3:0]           wmask;
   logic [ADDR_WIDTH:0]  addr;
-  logic [WIDTH-1:0]     din;
-  logic [WIDTH-1:0]     dout;
+  logic [31:0] din;
+  logic [31:0] dout;
 
   assign ce    = 1'b1;
   assign rstb  = ~rst;
@@ -69,60 +69,152 @@ module dot_product #(
 
   // TODO: fill in the rest of this module.
 
-  logic [2:0] state;
-  logic [2:0] next_state;
+  state_t state, next_state;
 
-  logic [ADDR_WIDTH-1:0] a_count;
-  logic [ADDR_WIDTH-1:0] b_count;
+  logic [ADDR_WIDTH:0] a_count;
+  logic [ADDR_WIDTH:0] b_count;
+  logic [ADDR_WIDTH:0] index;
+
+  logic [WIDTH-1:0] a_reg; 
+  logic [WIDTH-1:0] result;
 
   always_ff @(posedge clk) begin
     if (rst) begin
       state <= S_LOAD;
       a_count <= '0;
       b_count <= '0;
+      index <= '0;
+      a_reg <= '0;
+      result <= '0;
     end else begin
-      next_state = state;
+      state <= next_state;
+
+      case (state)
+        S_LOAD: begin
+          
+          if (a_fire) begin
+            a_count <= a_count + 1'b1;
+          end
+          
+          if (b_fire) begin
+            b_count <= b_count +1'b1;
+          end
+        end
+
+        S_GET_A: begin
+          a_reg <= dout[WIDTH-1:0];
+        end
+
+        S_GET_B: begin
+          result <= result + (a_reg * dout[WIDTH-1:0]);         
+          index <= index + 1'b1;
+        end
+
+        S_DONE: begin
+          if (c_fire) begin
+            a_count <= '0;
+            b_count <= '0;
+            index <= '0;
+            result <= '0;
+          end
+        end
+
+        default: begin
+        end
+      endcase
+        
     end
+
+  end
 
   always_comb begin
 
     next_state = state;
+    a_ready = 1'b0;
+    b_ready = 1'b0;
+    c_valid = 1'b0;
+    we = 1'b0;
+    addr = '0;
+    din = '0;
 
-    S_LOAD: begin
-      if (a_fire && (a_count<len)) begin
-        next_state = S_SET_A_ADDR;
-        ce = 1'b1;
-        we = 1'b1;
-        wmask = 4'b1111;
-        addr = {1, a_count};
-        din = a_data;
-      end 
-      else if (b_fire) begin
-        next_state = S_GET_B_ADDR;
-        ce = 1'b1;
-        we = 1'b1;
-        wmask = 4'b1111;
-        addr = {1, b_count};
-        din = b_data;
+    case (state)
+
+      S_LOAD: begin
+        a_ready = (a_count < len);
+
+        b_ready = (b_count < len) && !(a_fire);
+
+        if (a_fire) begin
+            we   = 1'b1;
+            addr = {1'b0, a_count[4:0]};
+            din  = 32'(a_data);
+        end else if (b_fire) begin
+            we   = 1'b1;
+            addr = {1'b1, b_count[4:0]};
+            din  = 32'(b_data);
+        end
+
+        if ((a_count == len) && (b_count == len)) begin
+            next_state = S_SET_A_ADDR;
+        end
+
+      end
+
+
+      S_SET_A_ADDR: begin
+        we = '0;
+        addr = {1'b0, 5'(index)};
+        next_state = S_GET_A;
+      end
+
+
+      S_GET_A: begin
+        next_state = S_SET_B_ADDR;
+      end
+
+
+      S_SET_B_ADDR: begin
+        we = '0;
+        addr = {1'b1, 5'(index)};
+        next_state = S_GET_B;
+      end
+
+
+      S_GET_B: begin
+        if (index < (len - 6'b1)) begin
+          next_state = S_SET_A_ADDR;
+        end else begin
+          next_state = S_DONE;
+        end
       end
 
         
-    
+      S_DONE: begin
+        c_valid = 1'b1;
+        
+        if (c_fire) begin
+          next_state = S_LOAD;
+        end
+      end
 
-    S_SET_A_ADDR: begin
+      default: begin
+        next_state = S_LOAD;
+      end
+    endcase
+  end
 
+  assign c_data = result;
 
-    S_GET_A: begin
+  //Assertion 1: check that only one input can have handskae
+  Single_Handshake: assert property (
+    @(posedge clk) disable iff (rst)
+    !(a_fire && b_fire)
+  ) else $error("Both A and B accepted in same cycle!");
 
-
-    S_SET_B_ADDR: begin
-
-
-    S_GET_B: begin
-
-
-    S_DONE: begin
-
-
+  //Assertion 2: output signal should stay stable
+  Stable_Output: assert property (
+    @(posedge clk) disable iff (rst)
+    (c_valid && !c_ready) |=> (c_ready && $stable(c_data))
+  ) else $error("Output handshake signal is not stable!");
 
 endmodule
