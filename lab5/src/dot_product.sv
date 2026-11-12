@@ -205,6 +205,8 @@ module dot_product #(
 
   assign c_data = result;
 
+  `ifndef SYNTHESIS
+
   //Assertion 1: check that only one input can have handskae
   Single_Handshake: assert property (
     @(posedge clk) disable iff (rst)
@@ -216,5 +218,7 @@ module dot_product #(
     @(posedge clk) disable iff (rst)
     (c_valid && !c_ready) |=> (c_valid && $stable(c_data))
   ) else $error("Output handshake signal is not stable!");
+
+  `endif
 
 endmodule
