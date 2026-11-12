@@ -1,0 +1,118 @@
+OpenROAD bazel-nostamp 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+===== Build clock tree for standard-cell FFs and SRAM clock pin =====
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_2
+                    sky130_fd_sc_hd__clkbuf_4
+                    sky130_fd_sc_hd__clkbuf_8
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0011]  Clock net "clk" for macros has 1 sinks.
+[INFO CTS-0011]  Clock net "clk_regs" for registers has 88 sinks.
+[INFO CTS-0008] TritonCTS found 2 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 1.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(270840, 205080), (270840, 205080)].
+[INFO CTS-0024]  Normalized sink region: [(19.9147, 15.0794), (19.9147, 15.0794)].
+[INFO CTS-0025]     Width:  0.0000.
+[INFO CTS-0026]     Height: 0.0000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 1
+    Sub-region size: 0.0000 X 0.0000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (3240.630 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 1.
+[INFO CTS-0201] 1 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_regs.
+[INFO CTS-0028]  Total number of sinks: 88.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(342045, 580780), (517765, 890860)].
+[INFO CTS-0024]  Normalized sink region: [(25.1504, 42.7044), (38.071, 65.5044)].
+[INFO CTS-0025]     Width:  12.9206.
+[INFO CTS-0026]     Height: 22.8000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 44
+    Sub-region size: 12.9206 X 11.4000
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 22
+    Sub-region size: 6.4603 X 11.4000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 11
+    Sub-region size: 6.4603 X 5.7000
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0038]  Stop criterion found. Sink region hpwl is smaller than max wirelength (3240.630 um) and max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 88.
+[INFO CTS-0018]     Created 2 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 2 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 1:1..
+[INFO CTS-0017]     Max level of the clock tree: 1.
+[INFO CTS-0018]     Created 9 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 9 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 7:1, 8:1, 9:1, 10:1, 11:1, 13:1, 15:2..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0124] Clock net "clk"
+[INFO CTS-0125]  Sinks 1
+[INFO CTS-0098] Clock net "clk_regs"
+[INFO CTS-0099]  Sinks 94
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 165.82 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 6
+[INFO CTS-0033] Balancing latency for clock clk
+[INFO CTS-0036]  inserted 0 delay buffers
+[INFO CTS-0500] Runtime: 0.37s
+[INFO RSZ-0058] Using max wire length 3241um.
+[INFO DPL-0006] Core area: 918721.13 um^2
+[INFO DPL-0007] Movable instances area: 21281.66 um^2
+[INFO DPL-0008] Fixed instances area within core: 82775.75 um^2
+[INFO DPL-0009] Utilization: 11.3%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (2 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 14142 cells
+[INFO DPL-0393]   height 71 row(s): 1 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |         12 |         2 |        10
+        1 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 1.
+[INFO DPL-0500] Runtime: 0.04s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves                 229
+total displacement         76.7 u
+average displacement        0.0 u
+max displacement           11.7 u
+original HPWL          114983.2 u
+legalized HPWL         115018.2 u
+delta HPWL                    0 %
+
+===== Post-CTS timing (placement-estimated parasitics) =====
+worst slack max 7.80
+worst slack min 0.36
+Saved: /Users/terrysmac/Documents/eecs151-asic-lab-sp26/lab5/local_openroad/results/dot_product_cts.odb

@@ -1,0 +1,1198 @@
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5803_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.213   10.071 ^ _4444_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.115   10.186 v _4446_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.191   10.377 v _4447_/X (sky130_fd_sc_hd__o21a_1)
+   0.196   10.572 v _4451_/X (sky130_fd_sc_hd__o21a_1)
+   0.247   10.819 ^ _4455_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.115   10.934 v _4458_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.166   11.101 v _4584_/X (sky130_fd_sc_hd__xor2_1)
+   0.131   11.232 ^ _4585_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.050   11.281 v _4587_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   11.281 v _5803_/D (sky130_fd_sc_hd__dfxtp_1)
+           11.281   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_0__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5803_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.103   20.184   library setup time
+           20.184   data required time
+-----------------------------------------------------------
+           20.184   data required time
+          -11.281   data arrival time
+-----------------------------------------------------------
+            8.902   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5802_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.213   10.071 ^ _4444_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.115   10.186 v _4446_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.191   10.377 v _4447_/X (sky130_fd_sc_hd__o21a_1)
+   0.196   10.572 v _4451_/X (sky130_fd_sc_hd__o21a_1)
+   0.247   10.819 ^ _4455_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.078   10.897 v _4874_/Y (sky130_fd_sc_hd__nor2_1)
+   0.082   10.979 ^ _4876_/Y (sky130_fd_sc_hd__nor2_1)
+   0.067   11.046 v _4877_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.120   11.166 ^ _4878_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   11.166 ^ _5802_/D (sky130_fd_sc_hd__dfxtp_1)
+           11.166   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_2__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5802_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.060   20.227   library setup time
+           20.227   data required time
+-----------------------------------------------------------
+           20.227   data required time
+          -11.166   data arrival time
+-----------------------------------------------------------
+            9.061   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5801_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.213   10.071 ^ _4444_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.115   10.186 v _4446_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.191   10.377 v _4447_/X (sky130_fd_sc_hd__o21a_1)
+   0.196   10.572 v _4451_/X (sky130_fd_sc_hd__o21a_1)
+   0.148   10.720 ^ _4870_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.051   10.771 v _4871_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.104   10.875 ^ _4872_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.047   10.922 v _4873_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   10.922 v _5801_/D (sky130_fd_sc_hd__dfxtp_1)
+           10.922   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_2__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5801_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.101   20.185   library setup time
+           20.185   data required time
+-----------------------------------------------------------
+           20.185   data required time
+          -10.922   data arrival time
+-----------------------------------------------------------
+            9.263   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5800_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.213   10.071 ^ _4444_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.115   10.186 v _4446_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.191   10.377 v _4447_/X (sky130_fd_sc_hd__o21a_1)
+   0.134   10.511 v _4450_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.174   10.684 ^ _4868_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.050   10.735 v _4869_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   10.735 v _5800_/D (sky130_fd_sc_hd__dfxtp_1)
+           10.735   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_2__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5800_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.104   20.183   library setup time
+           20.183   data required time
+-----------------------------------------------------------
+           20.183   data required time
+          -10.735   data arrival time
+-----------------------------------------------------------
+            9.448   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5799_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.213   10.071 ^ _4444_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.115   10.186 v _4446_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.144   10.330 v _4863_/X (sky130_fd_sc_hd__xor2_1)
+   0.133   10.463 ^ _4865_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.050   10.513 v _4866_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   10.513 v _5799_/D (sky130_fd_sc_hd__dfxtp_1)
+           10.513   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_2__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5799_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.103   20.183   library setup time
+           20.183   data required time
+-----------------------------------------------------------
+           20.183   data required time
+          -10.513   data arrival time
+-----------------------------------------------------------
+            9.670   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5798_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.213   10.071 ^ _4444_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.124   10.196 ^ _4860_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+   0.083   10.279 v _4861_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.132   10.411 ^ _4862_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   10.411 ^ _5798_/D (sky130_fd_sc_hd__dfxtp_1)
+           10.411   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_2__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5798_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.062   20.225   library setup time
+           20.225   data required time
+-----------------------------------------------------------
+           20.225   data required time
+          -10.411   data arrival time
+-----------------------------------------------------------
+            9.814   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5797_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.202    9.858 v _4440_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.125    9.983 ^ _4443_/Y (sky130_fd_sc_hd__nor2_1)
+   0.041   10.024 v _4857_/Y (sky130_fd_sc_hd__nor2_1)
+   0.150   10.174 ^ _4858_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.050   10.223 v _4859_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   10.223 v _5797_/D (sky130_fd_sc_hd__dfxtp_1)
+           10.223   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.153   20.387 ^ clkbuf_3_2__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.387 ^ _5797_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.287   clock uncertainty
+   0.000   20.287   clock reconvergence pessimism
+  -0.103   20.183   library setup time
+           20.183   data required time
+-----------------------------------------------------------
+           20.183   data required time
+          -10.223   data arrival time
+-----------------------------------------------------------
+            9.960   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5796_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.412    9.656 ^ _4438_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.121    9.777 v _4852_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.239   10.016 v _4854_/X (sky130_fd_sc_hd__o31a_1)
+   0.067   10.084 ^ _4855_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000   10.084 ^ _5796_/D (sky130_fd_sc_hd__dfxtp_1)
+           10.084   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5796_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.054   20.234   library setup time
+           20.234   data required time
+-----------------------------------------------------------
+           20.234   data required time
+          -10.084   data arrival time
+-----------------------------------------------------------
+           10.150   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5795_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.331    9.575 v _4436_/X (sky130_fd_sc_hd__or3_1)
+   0.087    9.662 ^ _4437_/Y (sky130_fd_sc_hd__nand2_1)
+   0.108    9.770 ^ _4848_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.072    9.842 v _4849_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.120    9.962 ^ _4850_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    9.962 ^ _5795_/D (sky130_fd_sc_hd__dfxtp_1)
+            9.962   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5795_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.060   20.228   library setup time
+           20.228   data required time
+-----------------------------------------------------------
+           20.228   data required time
+           -9.962   data arrival time
+-----------------------------------------------------------
+           10.266   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5794_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.137    9.244 v _4435_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.331    9.575 v _4436_/X (sky130_fd_sc_hd__or3_1)
+   0.190    9.765 ^ _4845_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.050    9.815 v _4846_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    9.815 v _5794_/D (sky130_fd_sc_hd__dfxtp_1)
+            9.815   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5794_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.103   20.185   library setup time
+           20.185   data required time
+-----------------------------------------------------------
+           20.185   data required time
+           -9.815   data arrival time
+-----------------------------------------------------------
+           10.370   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5793_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.115    9.222 v _4434_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.303    9.525 v _4838_/X (sky130_fd_sc_hd__or3_1)
+   0.184    9.709 ^ _4840_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.050    9.759 v _4843_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    9.759 v _5793_/D (sky130_fd_sc_hd__dfxtp_1)
+            9.759   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5793_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.103   20.185   library setup time
+           20.185   data required time
+-----------------------------------------------------------
+           20.185   data required time
+           -9.759   data arrival time
+-----------------------------------------------------------
+           10.426   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5792_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.279    9.107 ^ _4432_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.149    9.256 ^ _4835_/X (sky130_fd_sc_hd__lpflow_inputiso1p_1)
+   0.084    9.340 v _4836_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.132    9.472 ^ _4837_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    9.472 ^ _5792_/D (sky130_fd_sc_hd__dfxtp_1)
+            9.472   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5792_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.061   20.226   library setup time
+           20.226   data required time
+-----------------------------------------------------------
+           20.226   data required time
+           -9.472   data arrival time
+-----------------------------------------------------------
+           10.755   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5791_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.086    8.828 v _4430_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.146    8.974 ^ _4831_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.051    9.025 v _4832_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.106    9.131 ^ _4833_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.047    9.178 v _4834_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    9.178 v _5791_/D (sky130_fd_sc_hd__dfxtp_1)
+            9.178   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5791_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.101   20.187   library setup time
+           20.187   data required time
+-----------------------------------------------------------
+           20.187   data required time
+           -9.178   data arrival time
+-----------------------------------------------------------
+           11.009   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5790_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.249    8.742 ^ _4429_/X (sky130_fd_sc_hd__maj3_1)
+   0.064    8.806 v _4827_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.075    8.881 ^ _4828_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.074    8.955 v _4829_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    8.955 v _5790_/D (sky130_fd_sc_hd__dfxtp_1)
+            8.955   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5790_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.105   20.183   library setup time
+           20.183   data required time
+-----------------------------------------------------------
+           20.183   data required time
+           -8.955   data arrival time
+-----------------------------------------------------------
+           11.228   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5789_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.229    8.493 ^ _4427_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.140    8.633 ^ _4823_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.086    8.718 v _4824_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.132    8.850 ^ _4825_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    8.850 ^ _5789_/D (sky130_fd_sc_hd__dfxtp_1)
+            8.850   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.154   20.388 ^ clkbuf_3_3__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.388 ^ _5789_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.288   clock uncertainty
+   0.000   20.288   clock reconvergence pessimism
+  -0.061   20.226   library setup time
+           20.226   data required time
+-----------------------------------------------------------
+           20.226   data required time
+           -8.850   data arrival time
+-----------------------------------------------------------
+           11.376   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5788_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.194    8.264 v _4426_/X (sky130_fd_sc_hd__o21a_1)
+   0.134    8.398 v _4820_/X (sky130_fd_sc_hd__xor2_1)
+   0.130    8.528 ^ _4821_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.050    8.578 v _4822_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    8.578 v _5788_/D (sky130_fd_sc_hd__dfxtp_1)
+            8.578   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.152   20.386 ^ clkbuf_3_6__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.386 ^ _5788_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.286   clock uncertainty
+   0.000   20.286   clock reconvergence pessimism
+  -0.104   20.182   library setup time
+           20.182   data required time
+-----------------------------------------------------------
+           20.182   data required time
+           -8.578   data arrival time
+-----------------------------------------------------------
+           11.604   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5787_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.130    8.069 v _4425_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.148    8.218 v _4816_/X (sky130_fd_sc_hd__xor2_1)
+   0.133    8.351 ^ _4817_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.050    8.400 v _4818_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    8.400 v _5787_/D (sky130_fd_sc_hd__dfxtp_1)
+            8.400   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.152   20.386 ^ clkbuf_3_6__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.386 ^ _5787_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.286   clock uncertainty
+   0.000   20.286   clock reconvergence pessimism
+  -0.104   20.182   library setup time
+           20.182   data required time
+-----------------------------------------------------------
+           20.182   data required time
+           -8.400   data arrival time
+-----------------------------------------------------------
+           11.781   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5786_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.227    7.939 ^ _4424_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.098    8.037 v _4813_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.153    8.191 ^ _4814_/Y (sky130_fd_sc_hd__a22oi_1)
+   0.050    8.240 v _4815_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    8.240 v _5786_/D (sky130_fd_sc_hd__dfxtp_1)
+            8.240   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.152   20.386 ^ clkbuf_3_6__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.386 ^ _5786_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.286   clock uncertainty
+   0.000   20.286   clock reconvergence pessimism
+  -0.104   20.182   library setup time
+           20.182   data required time
+-----------------------------------------------------------
+           20.182   data required time
+           -8.240   data arrival time
+-----------------------------------------------------------
+           11.941   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5785_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.368    7.712 v _4423_/X (sky130_fd_sc_hd__maj3_1)
+   0.146    7.858 ^ _4807_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.051    7.908 v _4809_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.110    8.018 ^ _4810_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.047    8.065 v _4811_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    8.065 v _5785_/D (sky130_fd_sc_hd__dfxtp_1)
+            8.065   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.152   20.386 ^ clkbuf_3_6__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.386 ^ _5785_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.286   clock uncertainty
+   0.000   20.286   clock reconvergence pessimism
+  -0.101   20.184   library setup time
+           20.184   data required time
+-----------------------------------------------------------
+           20.184   data required time
+           -8.065   data arrival time
+-----------------------------------------------------------
+           12.119   slack (MET)
+
+
+Startpoint: sram (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _5784_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock source latency
+   0.000    0.000 ^ clk (in)
+   0.091    0.091 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.350    0.441 ^ clkbuf_1_0__f_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000    0.441 ^ sram/clk (sram22_64x32m4w8)
+   3.284    3.725 ^ sram/dout[0] (sram22_64x32m4w8)
+   0.275    4.000 ^ _4255_/X (sky130_fd_sc_hd__and2_0)
+   0.350    4.350 v _4293_/X (sky130_fd_sc_hd__xnor3_1)
+   0.379    4.729 v _4294_/X (sky130_fd_sc_hd__maj3_1)
+   0.247    4.975 v _4297_/X (sky130_fd_sc_hd__xor3_1)
+   0.361    5.336 ^ _4330_/X (sky130_fd_sc_hd__xnor3_1)
+   0.410    5.747 ^ _4332_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.504    6.250 v _4352_/X (sky130_fd_sc_hd__xnor3_1)
+   0.164    6.415 v _4355_/X (sky130_fd_sc_hd__xor2_1)
+   0.239    6.654 ^ _4415_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.125    6.779 v _4416_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.233    7.012 ^ _4417_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.133    7.145 v _4418_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.199    7.344 v _4421_/X (sky130_fd_sc_hd__o21a_1)
+   0.135    7.480 v _4422_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.175    7.655 ^ _4805_/Y (sky130_fd_sc_hd__a32oi_1)
+   0.050    7.705 v _4806_/Y (sky130_fd_sc_hd__nor2_1)
+   0.000    7.705 v _5784_/D (sky130_fd_sc_hd__dfxtp_1)
+            7.705   data arrival time
+
+  20.000   20.000   clock clk (rise edge)
+   0.000   20.000   clock source latency
+   0.000   20.000 ^ clk (in)
+   0.091   20.091 ^ clkbuf_regs_0_clk/X (sky130_fd_sc_hd__clkbuf_8)
+   0.143   20.234 ^ clkbuf_0_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.152   20.386 ^ clkbuf_3_6__f_clk_regs/X (sky130_fd_sc_hd__clkbuf_8)
+   0.000   20.386 ^ _5784_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.100   20.286   clock uncertainty
+   0.000   20.286   clock reconvergence pessimism
+  -0.104   20.182   library setup time
+           20.182   data required time
+-----------------------------------------------------------
+           20.182   data required time
+           -7.705   data arrival time
+-----------------------------------------------------------
+           12.477   slack (MET)
+
+

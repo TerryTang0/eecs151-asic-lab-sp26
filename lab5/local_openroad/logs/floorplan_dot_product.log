@@ -1,0 +1,33 @@
+OpenROAD bazel-nostamp 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+===== 1. Loading Sky130 HD + SRAM22 physical views =====
+[INFO ODB-0227] LEF file: /Users/terrysmac/Documents/eda-tools/OpenROAD/test/sky130hd/sky130hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /Users/terrysmac/Documents/eda-tools/OpenROAD/test/sky130hd/sky130_fd_sc_hd_merged.lef, created 437 library cells
+[INFO ODB-0227] LEF file: /Users/terrysmac/Documents/eecs151-asic-lab-sp26/lab5/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef, created 1 library cells
+===== 2. Loading timing models and synthesized netlist =====
+===== 3. Initializing die and core =====
+[WARNING IFP-0028] Core area lower left (20.000, 20.000) snapped to (20.240, 21.760).
+[INFO IFP-0001] Added 352 rows of 2086 site unithd.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 1000.000 1000.000 ) um
+[INFO IFP-0101] Core BBox: ( 20.240 21.760 ) ( 979.800 979.200 ) um
+[INFO IFP-0102] Core area:                       918721.126 um^2
+[INFO IFP-0103] Total instances area:             89856.294 um^2
+[INFO IFP-0104] Effective utilization:                0.098
+[INFO IFP-0105] Number of instances:                   2971
+===== 4. Manually placing one SRAM macro =====
+[INFO ODB-0303] The initial 352 rows (734272 sites) were cut with 1 shapes for a total of 493 rows (669553 sites).
+===== 5. Placing top-level pins (not standard cells) =====
+Found 1 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of available slots 3632
+[INFO PPL-0002] Number of I/O             110
+[INFO PPL-0003] Number of I/O w/sink      110
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 57961.77 um.
+===== 6. Writing checkpoint =====
+Floorplan saved: /Users/terrysmac/Documents/eecs151-asic-lab-sp26/lab5/local_openroad/results/dot_product_floorplan.odb
+NOTE: SRAM placed; standard cells, power grid, CTS and routing NOT done yet.

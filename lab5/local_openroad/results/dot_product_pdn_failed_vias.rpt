@@ -1,0 +1,78 @@
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 158.4350) - (128.0050, 160.3550) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 162.2750) - (128.0050, 164.1950) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 166.1150) - (128.0050, 168.0350) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 186.5550) - (128.0050, 188.4750) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 190.3950) - (128.0050, 192.3150) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 194.2350) - (128.0050, 196.1550) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 198.0750) - (128.0050, 199.9950) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 201.9150) - (128.0050, 203.8350) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 205.7550) - (128.0050, 207.6750) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 209.5950) - (128.0050, 211.5150) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (128.0000, 213.4350) - (128.0050, 215.3550) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VDD
+	bbox = (263.7000, 80.1600) - (263.7200, 440.1600) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (87.2900, 82.8800) - (87.6000, 437.4400) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (143.0400, 82.8800) - (143.1700, 181.4400) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (143.0400, 203.5600) - (143.1700, 216.8000) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (143.0400, 430.6800) - (143.1700, 437.4400) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (170.2400, 82.8800) - (170.3100, 144.0400) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (170.2400, 147.8000) - (170.3100, 182.1200) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (170.2400, 203.5600) - (170.3100, 220.8800) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (170.2400, 430.6800) - (170.3100, 437.4400) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (197.4400, 82.8800) - (197.4500, 179.4000) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (197.4400, 215.8000) - (197.4500, 220.8800) on Layer -
+violation type: Build - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (197.4400, 430.6800) - (197.4500, 437.4400) on Layer -
+violation type: Ripup - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (88.6400, 82.8800) - (88.8900, 437.4400) on Layer -
+violation type: Ripup - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (115.8400, 82.8800) - (116.0300, 151.5200) on Layer -
+violation type: Ripup - sram_grid - sram - met2 -> met4
+	srcs: net:VSS
+	bbox = (115.8400, 432.7200) - (116.0300, 437.4400) on Layer -
