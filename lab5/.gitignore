@@ -1,0 +1,15 @@
+
+# Q4 OpenROAD generated outputs
+/local_openroad_q4/results/
+/local_openroad_q4/logs/
+/local_openroad_q4/backup_results/
+/local_openroad_q4/accidental_outputs/
+
+# Verilator build directories
+/obj_dir*/
+
+# Simulation waveforms
+*.vcd
+
+# External SRAM macro collateral
+/sram22_sky130_macros/
