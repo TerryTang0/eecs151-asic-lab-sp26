@@ -19,10 +19,13 @@ Implemented and evaluated a dot-product accelerator with an integration of a SRA
 
 ## Layout
 
+### Final Layout
 ![Final layout](final_dot_floorplan.png)
 
+### Power Density
 ![Power density](final_dot_power_density.png)
 
+### Routing Congestion
 ![Routing Congestion](final_dot_routing_congestion.png)
 
 ## Repository guide
