@@ -13,3 +13,7 @@
 
 # External SRAM macro collateral
 /sram22_sky130_macros/
+
+# Original OpenROAD generated files
+/local_openroad/results/
+/local_openroad/logs/
